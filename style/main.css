@@ -1,0 +1,822 @@
+body {
+    font-family: 'Roboto', "Helvetica Neue", sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.nav {
+    background-color: #2196f3;
+}
+
+.logo-img {
+    width: 48px;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.logo-link {
+    width: 170px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    padding: 4px 20px 8px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-link:hover {
+    background-color: #1375c5;
+}
+
+.nav-contact {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.number-column {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.number-column::before {
+    content: '';
+    background-image: url('../img/phone.svg');
+    background-size: 25px 25px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-number-links {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-number-links:hover {
+    text-decoration: underline;
+}
+
+.place {
+    padding: 21px 20px 20px 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.place::before {
+    content: '';
+    background-image: url('../img/pin.svg');
+    background-size: 25px 25px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #fff;
+}
+
+.place:hover {
+    background-color: #1375c5;
+}
+
+.main {
+    background-color: #fafafa;
+}
+
+.main-content {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-link {
+    margin-left: 50px;
+    font-size: 14px;
+    color: #747474;
+    font-weight: 500;
+    text-decoration: none;
+    padding-bottom: 12px;
+    border-bottom: 2px solid transparent;
+}
+
+.main-link:hover {
+    color: #0b79d3;
+    border-bottom: 2px solid #ee8b45;
+}
+
+.slider {
+    padding: 50px;
+    background-image: url('../img/slider-background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-title {
+    font-size: 48px;
+    margin-bottom: 50px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.info-subtitle {
+    font-size: 24px;
+    color: #fff;
+}
+
+.rate {
+    padding: 20px 0;
+    background-color: #96c1e7;
+}
+
+.rate-title {
+    font-size: 28px;
+    letter-spacing: .25px;
+    color: #1976d2;
+    margin-bottom: 20px;
+}
+
+/* попытка настроить табы */
+
+.tabs-header {
+    display: flex;
+    text-align: center;
+    color: #00559b;
+    font-size: 26px;
+}
+
+.tab {
+    flex-basis: 50%;
+    cursor: pointer;
+    padding: 15px;
+    font-family: serif;
+}
+
+.tab-active {
+    background-color: #2196f3;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 3px 3px 0 0;
+}
+
+.tab-content {
+    margin-top: 1px;
+    padding-top: 30px;
+    border-top: 5px solid #1274c5;
+    border-bottom: 5px solid #1274c5;
+}
+
+.pon {
+    color: #e3e3e3;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-left: 4px solid #2196f3;
+}
+
+.pon span {
+    font-weight: 700;
+    font-size: 26px;
+    color: #ee8b45;
+}
+
+.tab-hide {
+    display: none;
+}
+
+.tab span {
+    color: #ee8b45;
+    font-weight: 700;
+}
+
+.rate-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rate-clock {
+    width: 120px;
+}
+
+.rate-card {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+    padding: 30px 15px;
+    background-image: url('../img/rate/rate-background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.rate-name {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.rate-speed {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.rate-speed span {
+    font-weight: 700;
+    font-size: 26px;
+    color: #ee8b45;
+}
+
+.rate-price {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* блок новостей */
+
+.news {
+    padding: 20px 0;
+    background-color: #1c76c0;
+}
+
+.news-content {
+    border-top: 5px solid #ee8b45;
+    padding-top: 20px;
+}
+
+.news-title {
+    font-size: 28px;
+    letter-spacing: .25px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.news-cards {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.news-card {
+    flex-basis: 33%;
+    position: relative;
+}
+
+.news-card::after {
+    content: '';
+    width: 2px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    right: 20%;
+    top: 0;
+}
+
+.news-card:last-child::after {
+    content: '';
+    display: none;
+}
+
+.news-date {
+    font-size: 14px;
+    color: #e3e3e3;
+    margin-bottom: 10px;
+}
+
+.news-description {
+    width: 300px;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* блок с кабельным тв */
+
+.television {
+    padding: 50px 0;
+    padding-top: 20px;
+}
+
+.television-title {
+    font-size: 28px;
+    letter-spacing: .25px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.television-img {
+    width: 480px;
+    margin-bottom: 40px;
+}
+.television-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-kanal{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #ee8b45;
+    font-size: 18px;
+}
+.btn-kanal:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.television-info {
+    text-align: center;
+    color: #fff;
+    line-height: 1.5;
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+.television-info span {
+    font-weight: 700;
+    font-size: 26px;
+    color: #ee8b45;
+}
+
+/* блок ip tv и статический ip  */
+
+.ip {
+    background-color: #fafafa;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ip-header {
+    font-size: 28px;
+    letter-spacing: .25px;
+    color: #1c76c0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hide-ip-title {
+    display: none;
+    font-size: 28px;
+    letter-spacing: .25px;
+    color: #1c76c0;
+    margin-bottom: 20px;
+}
+
+.pon-ip-tv {
+    display: block;
+    color: #1c76c0;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.ip-border {
+    height: inherit;
+    width: 3px;
+    background-color: #2196f3;
+    border-radius: 8px;
+}
+
+.ip-body {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    text-align: justify;
+}
+
+.ip-tv, .static-ip {
+    width: 40%;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #747474;
+}
+
+.orange {
+    color: #ee8b45;
+    font-weight: 700;
+}
+
+/* контакты */
+
+.contact {
+    /* background-color: #2196f3; */
+    background-image: url('../img/rate/rate-background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    padding: 20px 0;
+}
+
+.contact-title {
+    font-size: 28px;
+    letter-spacing: .25px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.description-text, .description-number {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.description-mode {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.description-text span, .description-number span {
+    color: #ee8b45;
+    font-size: 26px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact-number-link {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.map {
+    width: 600px;
+    height: 450px;
+    border-radius: 8px;
+}
+.wifi{
+    padding-top: 30px;
+    text-align: center;
+}
+
+/* здесь футер */
+
+.footer {
+    background-color: #2196f3;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    /* border-bottom: 1px solid #fff; */
+}
+.developer{
+    color: #fff;
+    font-size: 12px;
+}
+.developer:hover{
+    color: #ee8b45;
+}
+
+/* прокрутка вверх */
+
+#up-block {
+    display: block;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    padding: 5px 15px;
+    background-color: #1c76c0;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    border: 1px solid #fff;
+    text-decoration: none;
+}
+
+#up-block:hover {
+    background-color: #fff;
+    color: #1c76c0;
+    border: 1px solid #1c76c0;
+}
+
+/* модальное окно для карты */
+
+.popup {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.popup-active {
+    display: block;
+}
+
+.popup-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup-close {
+    color: #fff;
+    font-weight: 700;
+    font-size: 32px;
+    position: absolute;
+    right: -30px;
+    top: -10px;
+    cursor: pointer;
+}
+
+.popup-close:hover {
+    color: #ee8b45;
+}
+/* модальное окно для списка каналов*/
+
+.popup-list {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+ol{
+    display: flex;
+    width: 1050px;
+    justify-content: space-between;
+
+}
+.list{
+    background-color: #fff;
+    padding: 15px 50px;
+    border-radius: 8px;
+}
+.popup-active-list{
+    display: block;
+}
+.list-header{
+    font-size: 18px;
+    color: #ee8b45;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: 500;
+
+}
+.first-list,
+.second-list,
+.third-list,
+.four-list,
+.five-list{
+flex-basis: 20%;
+}
+.popup-content-list {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup-close-list{
+    color: #fff;
+    font-weight: 700;
+    font-size: 32px;
+    position: absolute;
+    right: -30px;
+    top: -10px;
+    cursor: pointer;
+}
+
+.popup-close-list:hover {
+    color: #ee8b45;
+}
+.blue {
+    display: inline-block;
+    color: #ee8b45;
+    font-weight: 500;
+}
+
+/* адаптив */
+@media(max-width: 1200px) {
+    /* список каналов */
+    .btn-kanal {
+        display: none;
+    }
+}
+@media(max-width: 991px) {
+    /* новости */
+    .news-card {
+        width: 150px;
+    }
+    .news-card::after {
+        height: 70px;
+        right: 12%;
+    }
+    /* блок с айпи тв и статический айпи */
+    .ip-border {
+        display: none;
+    }
+    .ip-body {
+        flex-direction: column;
+    }
+    .ip-tv, .static-ip {
+        width: 100%;
+    }
+    .right {
+        display: none;
+    }
+    .hide-ip-title {
+        display: block;
+    }
+    /* контакты */
+    .contact-info {
+        justify-content: space-between;
+    }
+    .description-text, .description-number, .description-mode {
+        font-size: 16px;
+    }
+    .description-text span, .description-number span, .description-mode span {
+        font-size: 18px;
+    }
+    .map {
+        width: 500px;
+    }
+}
+
+@media(max-width: 900px) {
+    /* новости */
+    .news-card::after {
+        display: none;
+    }
+}
+@media(max-width: 840px) {
+    /* новости */
+    .news-cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .news-card{
+        width: 300px;
+        border: 3px solid #ee8b45;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+}
+@media(max-width: 810px) {
+   /* первый экран */
+   .slider-img{
+       display: none;
+   }
+   .slider-content{
+    justify-content: center;
+    text-align: center;
+   }
+   .main{
+       display: none;
+   }
+}
+@media(max-width: 790px) {
+    /* контакты */
+    
+    .map {
+        width: 400px;
+        height: 350px;
+    }
+ }
+ @media(max-width: 760px) {
+    /* первый экран */
+    .info-title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+ }
+ @media(max-width: 675px) {
+    /* контакты */
+    
+    .map {
+        width: 350px;
+        height: 350px;
+    }
+ }
+ @media(max-width: 640px) {
+    /* контакты */
+    .contact-info {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .map {
+        width: 450px;
+        height: 350px;
+        margin-bottom: 40px;
+    }
+ }
+ @media(max-width: 560px) {
+     /* первый экран */
+     .nav-contact{
+        justify-content: flex-end;
+     }
+     .place{
+         display: none;
+     }
+     /* тарифы */
+     .rate-info{
+         text-align: center;
+     }
+     .rate-clock{
+         display: none;
+
+     }
+     /* блок айпи */
+    .ip-tv, .static-ip {
+        line-height: 1.3;
+    }
+    .pon-ip-tv{
+        line-height: 1.2;
+    }
+
+ }
+ @media(max-width: 456px) {
+    /* контакты */
+    
+    .map {
+        width: 400px;
+        height: 350px;
+    }
+ }
+ @media(max-width: 400px) {
+    /* контакты */
+    
+    .map {
+       display: none;
+    }
+ }
+ @media(max-width: 360px) {
+    /* первый экран */
+    .number-column::before{
+        display: none;
+    }
+    /* тарифные планы */
+    .rate-name,
+    .rate-speed,
+    .rate-price{
+        font-size: 16px;
+        margin-bottom: 10px;  
+    }
+    .pon{
+        font-size: 14px;
+    }
+ }
+ @media(max-width: 321px){
+    .first-delete{
+        display: none;
+        font-size: 10px;
+    }
+    .logo-img {
+        width: 32px;
+    }
+    .logo-link{
+        font-size: 18px;
+        padding: 4px 70px 8px 20px;
+    }
+ }
